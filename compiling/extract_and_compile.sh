@@ -1,11 +1,11 @@
-
+#!/bin/sh
 
 int=$1
 
-tar xvf NthPrime.tgz
+tar xf NthPrime.tgz
 
-cd NthPrime
+cd NthPrime || exit
 
 gcc *.c -o NthPrime
 
-./NthPrime $int
+./NthPrime "$int"
